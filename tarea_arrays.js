@@ -2,9 +2,9 @@
 // 1.1 Crea una función llamada `procesarPedido` que recibe un array `pedido`.
 // Debes sacar el primer elemento (nombre del cliente), añadir "bebida" al inicio del array y añadir el nombre del cliente al final.
 function procesarPedido(pedido) {
-    pedido.shift();
+    let nombreCliente = pedido.shift();
     pedido.unshift("bebida");
-    pedido.push("Judith Morel");
+    pedido.push(nombreCliente);
     console.log(pedido);
 }
 procesarPedido(["Judith", "pizza"]);
